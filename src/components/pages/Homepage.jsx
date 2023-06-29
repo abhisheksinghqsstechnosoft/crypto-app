@@ -8,7 +8,8 @@ import Cryptocurrencies from './Cryptocurrencies'
 import News from './News'
 
 const Homepage = () => {
-  const {data , isFetching}  = useGetCryptosQuery();
+
+  const {data , isFetching}  = useGetCryptosQuery(10);
   console.log(data);
   if(isFetching) return 'Loading........'
 
